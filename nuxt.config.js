@@ -49,7 +49,8 @@ export default {
     build: {},
 
     generate: {
-        dir: 'docs/'
+        dir: 'docs/',
+        fallback: '404.html'
     },
 
     router: {
