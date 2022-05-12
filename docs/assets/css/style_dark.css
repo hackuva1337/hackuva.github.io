@@ -1,0 +1,512 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@font-face {
+    font-family: 'Regular';
+    font-weight: 'normal';
+    font-style: normal;
+    src: url("/assets/font/TradeGothicLTStd.eot");
+    src: url("/assets/font/TradeGothicLTStd.eot?#iefix") format('embedded-opentype'), url("/assets/font/TradeGothicLTStd.woff") format('woff'), url("/assets/font/TradeGothicLTStd.ttf") format('truetype'), url("/assets/font/TradeGothicLTStd.svg#TradeGothicLTStd") format('svg')
+}
+
+@font-face {
+    font-family: 'Bold';
+    font-weight: 'normal';
+    font-style: normal;
+    src: url("/assets/font/TradeGothicLTStd-Bd2.eot");
+    src: url("/assets/font/TradeGothicLTStd-Bd2.eot?#iefix") format('embedded-opentype'), url("/assets/font/TradeGothicLTStd-Bd2.woff") format('woff'), url("/assets/font/TradeGothicLTStd-Bd2.ttf") format('truetype'), url("/assets/font/TradeGothicLTStd-Bd2.svg#TradeGothicLTStd-Bd2") format('svg')
+}
+
+@font-face {
+    font-family: 'BoldCondensed';
+    font-weight: 'normal';
+    font-style: normal;
+    src: url("/assets/font/TradeGothicLTStd-BdCn20.eot");
+    src: url("/assets/font/TradeGothicLTStd-BdCn20.eot?#iefix") format('embedded-opentype'), url("/assets/font/TradeGothicLTStd-BdCn20.woff") format('woff'), url("/assets/font/TradeGothicLTStd-BdCn20.ttf") format('truetype'), url("/assets/font/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20") format('svg')
+}
+
+
+/* General */
+
+body {
+    background: #111;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #00FF00;
+    font-family: 'Droid Sans Mono';
+    font-size: 14.5px;
+    line-height: 27px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    font-family: 'Droid Sans Mono';
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+h2 {
+    padding-top: 24%;
+    line-height: 45px;
+    margin-bottom: 20px
+}
+
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 111px;
+    color: #111;
+    font-family: 'Droid Sans Mono';
+    font-size: 16.5px;
+}
+
+.header.start {
+    background: url(../img/header_start_green.webp) center center no-repeat;
+    background-size: cover;
+    height: 50%;
+    min-height: 500px;
+}
+
+section.content h1 {
+    line-height: 50px;
+}
+
+section.content p.last {
+    margin-bottom: 25px;
+}
+
+section.content p {
+    width: 90%;
+}
+
+section.content a {
+    color: #fff;
+}
+
+section.content a:link {
+    color: #fff;
+}
+
+section.content a:visited {
+    color: #fff;
+}
+
+section.content a:hover,
+section.content a:focus {
+    color: #B8B8B8;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+
+.zero-padding {
+    padding: 0;
+}
+
+.console {
+    font-family: "Droid Sans Mono";
+}
+
+.title {
+    font-size: 16.5px;
+    font-weight: bold;
+}
+
+table.contact {
+    margin: 20px 0;
+}
+
+table.contact td:first-child {
+    width: 80px;
+}
+
+
+/* Logo */
+
+.logo {
+    text-align: right;
+    float: right;
+    height: 42px;
+    width: 193px;
+    background: url(../img/hackuva_logo_green.png);
+    text-indent: 9999px;
+}
+
+input.form-control,
+select.form-control,
+textarea.form-control,
+button#feedbackSubmit {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #333;
+}
+
+.form-checkbox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #333;
+    font-size: 12px;
+    transform: scale(2);
+}
+
+
+/* Navigation */
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    /*
+	-webkit-transition:  background 0.2s ease-in-out;
+	-moz-transition:  background 0.2s ease-in-out; 
+	-o-transition:  background 0.2s ease-in-out; 
+	transition: background 0.2s ease-in-out;  */
+    border-bottom: 1px solid transparent;
+    padding: 20px 0 10px 0;
+}
+
+nav {
+    font-family: 'Droid Sans Mono';
+    text-transform: uppercase;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav .navbar-nav {
+    padding-top: 21px;
+}
+
+nav .navbar-nav a {
+    margin: 0;
+    padding: 0;
+    color: #00FF00!important;
+    border-bottom: 1px solid transparent;
+}
+
+nav .navbar-nav a:hover,
+nav .navbar-nav a:focus {
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .navbar-header {
+    width: 100%;
+}
+
+nav .navbar-collapse {
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+.nav a.active {
+    border-bottom: 1px solid #00ff00;
+}
+
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+button.navbar-toggle {
+    float: left;
+}
+
+
+/* Navigation: Burger to X */
+
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+}
+
+.navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+@media only screen and (max-width: 768px) {
+    #nav {
+        padding: 0;
+        margin: 0;
+    }
+    nav .navbar-nav {
+        margin-top: -10px;
+        border: transparent;
+        padding-left: 20px;
+    }
+    nav .navbar-nav a {
+        padding-top: 10px;
+    }
+    section.content p {
+        width: 100%;
+    }
+    .header {
+        margin-top: 0px!important;
+    }
+    h1,
+    h2 {
+        font-size: 25px!important;
+        line-height: 40px!important;
+        margin-bottom: 10px!important;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    padding: 40px 0 20px 0;
+    margin: 0;
+    margin-bottom: -5px;
+    background: #111;
+    color: #00FF00;
+    text-align: center;
+}
+
+footer p.imprint {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+footer a {
+    color: #00FF00;
+    border-bottom: 1px solid #00FF00;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #00FF00;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+
+
+/* TERMINAL */
+
+#terminal {
+    font-family: "Droid Sans Mono";
+    font-size: 13px;
+    padding: 10px;
+    background: rgba(10, 10, 10, 0.92);
+    height: 100%;
+    width: 100%;
+    color: #aaa;
+}
+
+.modal-dialog {
+    width: 90%;
+}
+
+.terminal .terminal-output .format,
+.terminal .cmd .format,
+.terminal .cmd .prompt,
+.terminal .cmd .prompt div,
+.terminal .terminal-output div div {
+    display: inline-block;
+}
+
+.terminal .clipboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.01;
+    filter: alpha(opacity=0.01);
+    filter: progid: DXImageTransform.Microsoft.Alpha(opacity=0.01);
+    width: 2px;
+}
+
+.cmd>.clipboard {
+    position: fixed;
+}
+
+.terminal {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cmd {
+    padding: 0;
+    margin: 0;
+    height: 1.3em;
+    /*margin-top: 3px; */
+}
+
+.terminal .terminal-output div div,
+.terminal .prompt {
+    display: block;
+    line-height: 14px;
+    height: auto;
+}
+
+.terminal .prompt {
+    float: left;
+}
+
+.terminal {
+    line-height: 14px;
+    overflow-y: auto;
+}
+
+.terminal-output>div {
+    /*padding-top: 3px;*/
+    min-height: 14px;
+}
+
+.terminal .terminal-output div span {
+    display: inline-block;
+}
+
+.terminal .cmd span {
+    float: left;
+    /*display: inline-block; */
+}
+
+.terminal .cmd span.inverted {
+    background-color: #aaa;
+    color: #000;
+}
+
+.terminal .terminal-output div div::-moz-selection,
+.terminal .terminal-output div span::-moz-selection,
+.terminal .terminal-output div div a::-moz-selection {
+    background-color: #aaa;
+    color: #000;
+}
+
+.terminal .terminal-output div div::selection,
+.terminal .terminal-output div div a::selection,
+.terminal .terminal-output div span::selection,
+.terminal .cmd>span::selection,
+.terminal .prompt span::selection {
+    background-color: #aaa;
+    color: #000;
+}
+
+.terminal .terminal-output div.error,
+.terminal .terminal-output div.error div {
+    color: red;
+}
+
+.tilda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+}
+
+.clear {
+    clear: both;
+}
+
+.terminal a {
+    color: #F0F0F0;
+}
+
+.terminal a:hover {
+    color: #CECECE;
+}
+
+
+/* Projekte */
+
+.projekt-img {
+    width: 80%;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+.projekt-img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* Misc */
+
+.top-buffer {
+    margin-top: 40px;
+}
+
+.kontaktaufnahme {
+    margin-top: 5em;
+}
+
+
+/* Crypto Logos */
+
+.cryptoLogo {
+    height: 25px;
+    width: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* login form */
+
+.login_div {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.login_btn {
+    display: block;
+    margin-top: 10px;
+}
+
+.login_btn_bg {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #333;
+}
+
+.table th {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.table.kontaktanfragen {
+    background: #212529 !important;
+    color: #00FF00 !important;
+}
