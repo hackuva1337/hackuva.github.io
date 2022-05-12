@@ -6,40 +6,9 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li><a href="/" class="active">Willkommen</a></li>
-              <li><a href="/hackuva" class="active">Über Hackuva</a></li>
-              <li class="dropdown">
-                <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Dienstleistungen <span class="caret"></span
-                ></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="/kompetenzen/" class="active">Kompetenzen</a>
-                  </li>
-                  <li><a href="/webdesign/" class="active">Webdesign</a></li>
-                  <li>
-                    <a href="/suchmaschinenoptimierung/" class="active"
-                      >Suchmaschinenoptimerung</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/softwareentwicklung/" class="active"
-                      >Softwareentwicklung</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/linuxadministration/" class="active"
-                      >Linux Administration</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/itsicherheit/" class="active">IT-Sicherheit</a>
-                  </li>
-                  <li><a href="/consulting/" class="active">Consulting</a></li>
-                </ul> -->
-              </li>
-              <!-- <li><a href="/projekte/" class="active">Projekte</a></li> -->
+              <li><a href="/hackuva/" class="active">Über Hackuva</a></li>
+              <li class="dropdown"></li>
               <li><a href="/presse/" class="active">Presse</a></li>
-              <!-- <li><a href="/kontakt/" class="active">Kontakt</a></li> -->
             </ul>
           </div>
         </div>
@@ -58,7 +27,7 @@
               <span class="icon-bar middle-bar"></span>
               <span class="icon-bar bottom-bar"></span>
             </button>
-            <a href="/index')}}">
+            <a href="/">
               <div class="logo">Hackuva</div>
             </a>
           </div>

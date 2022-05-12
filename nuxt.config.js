@@ -41,12 +41,25 @@ export default {
     buildModules: [],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        '@nuxtjs/sitemap',
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
 
     generate: {
         dir: 'docs/'
+    },
+
+    router: {
+        trailingSlash: true
+    },
+
+    sitemap: {
+        hostname: 'https://www.hackuva.de',
+        gzip: true
     }
+
+
 }
