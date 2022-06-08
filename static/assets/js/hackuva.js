@@ -1,13 +1,3 @@
-window.onload = function() {
-    if (window.jQuery) {
-        // jQuery is loaded  
-        alert("Yeah!");
-    } else {
-        // jQuery is not loaded
-        alert("Doesn't Work");
-    }
-}
-
 function load_greetings() {
     $.post(SITE + "themes/default/async/greetings.php", function(e) {
         $("#greetings").html(e.greets);
