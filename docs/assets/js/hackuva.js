@@ -1,3 +1,13 @@
+window.onload = function() {
+    if (window.jQuery) {
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
+
 function load_greetings() {
     $.post(SITE + "themes/default/async/greetings.php", function(e) {
         $("#greetings").html(e.greets);
@@ -6,14 +16,14 @@ function load_greetings() {
 }
 
 function start_welcomemsg(e) {
-	if (logged_username != "") { e = logged_username; }
+    if (logged_username != "") { e = logged_username; }
     $("body").append('<div id="welcome" style="display: none;"><h2>Welcome, ' + e + '</h2><p class="help-block">You are on hacklover.net</div></div>');
     $("#welcome").fadeIn(1200, function() {
         setTimeout(function() {
             $("#welcome").fadeOut(1e3, function() {
                 $("#header h2, #menu, #links, #window-page").fadeIn();
 
-				console.log('aho');
+                console.log('aho');
                 $("#window-wall").fadeIn();
                 open_window("window-wall")
             })
@@ -51,12 +61,12 @@ function open_window(e) {
             $("#" + e).css("top", 20);
             $("#" + e).css("left", 170)
         }
-		/*
+        /*
         if (e == "window-opo") {
             $("#" + e).css("top", 260);
             $("#" + e).css("left", 170)
         }
-		*/
+        */
         var r = $("#" + e).offset();
         localStorage[e] = r.top + "," + r.left + "," + "1"
     }
@@ -76,7 +86,7 @@ function close_window(e) {
     }
 }
 $(document).ready(function() {
-	$("[data-toggle=tooltip]").tooltip();
+    $("[data-toggle=tooltip]").tooltip();
 
     if (localStorage["window-console"]) {
         var e = localStorage["window-console"].split(",");
